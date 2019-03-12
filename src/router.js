@@ -22,6 +22,21 @@ export default new Router({
       path: '/sandbox',
       name: 'sandbox',
       component: () => import('./views/Sandbox.vue')
+    },
+    {
+      path: '/examples/chartjs',
+      name: 'chartjs',
+      component: () => import('./views/examples/ChartJsExample.vue')
+    },
+    {
+      path: '/examples/firebase',
+      name: 'firebase',
+      component: () => import('./views/examples/FirebaseExample.vue')
+    },
+    {
+      path: '/examples/todo',
+      name: 'todo',
+      component: () => import('./views/examples/TodoExample.vue')
     }
   ]
 });

@@ -1,11 +1,15 @@
 <template>
   <div class="c-navbar">
-    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+    <nav
+      class="navbar is-fixed-top has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
         <a class="navbar-item">
           <!-- LOGO SECTION -->
           <router-link to="/">
-            <img alt="Vue logo" src="../assets/img/logo.png">
+            <img alt="Vue logo" src="../assets/img/logo.png" />
           </router-link>
         </a>
 
@@ -13,7 +17,7 @@
         <a
           role="button"
           class="navbar-burger burger"
-          v-bind:class="{'is-active':isActive}"
+          v-bind:class="{ 'is-active': isActive }"
           aria-label="menu"
           aria-expanded="false"
           v-on:click="toggleMenu"
@@ -25,14 +29,24 @@
       </div>
 
       <!-- LARGER VIEWPORTS NAVBAR -->
-      <div class="navbar-menu" v-bind:class="{'is-active': isActive}">
-        <div class="navbar-end has-text-centered">
-          <a class="navbar-item" v-on:click="toggleMenu">
-            <router-link to="/about">About</router-link>
-          </a>
-          <a class="navbar-item" v-on:click="toggleMenu">
-            <router-link to="/sandbox">Sandbox</router-link>
-          </a>
+      <div class="navbar-menu" v-bind:class="{ 'is-active': isActive }">
+        <div class="navbar-end" v-on:click="toggleMenu">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Examples</a>
+            <div class="navbar-dropdown">
+              <router-link class="navbar-item" to="/examples/firebase"
+                >🔥 Firebase</router-link
+              >
+              <router-link class="navbar-item" to="/examples/chartjs"
+                >📈 Chart.js</router-link
+              >
+              <router-link class="navbar-item" to="/examples/todo"
+                >✅ Todo</router-link
+              >
+            </div>
+          </div>
+          <router-link to="/about" class="navbar-item">About</router-link>
+          <router-link class="navbar-item" to="/sandbox">Sandbox</router-link>
         </div>
       </div>
     </nav>

@@ -3,10 +3,10 @@
     <section class="section">
       <div class="container">
         <h1>Chart JS Demo</h1>
-        <LineChart/>
-        <BarChart/>
-        <PieChart/>
-        <RadarChart/>
+        <LineChart />
+        <BarChart />
+        <PieChart />
+        <RadarChart />
       </div>
     </section>
   </div>

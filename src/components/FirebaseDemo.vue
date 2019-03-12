@@ -16,11 +16,6 @@ export default {
     return {
       title: 'Firebase Demo'
     };
-  },
-  methods: {
-    sayHello() {
-      console.log('Hi how are ya');
-    }
   }
 };
 </script>
