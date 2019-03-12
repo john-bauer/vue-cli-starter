@@ -5,6 +5,8 @@
         <h1>Chart JS Demo</h1>
         <LineChart/>
         <BarChart/>
+        <PieChart/>
+        <RadarChart/>
       </div>
     </section>
   </div>
@@ -13,12 +15,16 @@
 <script>
 import LineChart from '@/components/charts/LineChart.vue';
 import BarChart from '@/components/charts/BarChart.vue';
+import PieChart from '@/components/charts/PieChart.vue';
+import RadarChart from '@/components/charts/RadarChart.vue';
 
 export default {
   name: 'ChartJsDemo',
   components: {
     LineChart,
-    BarChart
+    BarChart,
+    PieChart,
+    RadarChart
   }
 };
 </script>
