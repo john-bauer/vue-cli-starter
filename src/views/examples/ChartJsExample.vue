@@ -19,9 +19,9 @@
     </div>
     <div class="container">
       <!-- TODO: Fix, this is beyond lazy -->
-      <LineChart v-if="tabs[0].activeTab"/>
-      <BarChart v-if="tabs[1].activeTab"/>
-      <PieChart v-if="tabs[2].activeTab"/>
+      <LineChart v-if="tabs[0].activeTab" />
+      <BarChart v-if="tabs[1].activeTab" />
+      <PieChart v-if="tabs[2].activeTab" />
     </div>
   </div>
 </template>
