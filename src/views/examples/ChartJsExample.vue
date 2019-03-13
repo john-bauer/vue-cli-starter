@@ -7,39 +7,65 @@
     />
     <div class="tabs is-centered">
       <ul>
-        <li v-for="tab in tabs" :key="tab.name">
+        <li
+          v-for="tab in tabs"
+          :key="tab.name"
+          v-bind:class="{ 'is-active': tab.activeTab }"
+          v-on:click="toggleTabs(tab)"
+        >
           <a>{{ tab.name }}</a>
         </li>
       </ul>
+    </div>
+    <div class="section">
+      <LineChart v-if="tabs[0].activeTab"/>
+      <BarChart v-if="tabs[1].activeTab"/>
+      <PieChart v-if="tabs[2].activeTab"/>
     </div>
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero.vue';
+import LineChart from '@/components/charts/LineChart.vue';
+import BarChart from '@/components/charts/BarChart.vue';
+import PieChart from '@/components/charts/PieChart.vue';
 
 export default {
   name: 'about',
   components: {
-    Hero
+    Hero,
+    LineChart,
+    BarChart,
+    PieChart
   },
   data() {
     return {
+      isActive: false,
       tabs: [
         {
-          name: 'Line'
+          name: 'Line',
+          activeTab: true
         },
         {
-          name: 'Bar'
+          name: 'Bar',
+          activeTab: false
         },
         {
-          name: 'Pie'
-        },
-        {
-          name: 'Radar'
+          name: 'Pie',
+          activeTab: false
         }
       ]
     };
+  },
+  methods: {
+    toggleTabs(tab) {
+      for (let i = 0; i < this.tabs.length; i++) {
+        console.log(this.tabs[i].activeTab);
+        this.tabs[i].activeTab = false;
+      }
+      tab.activeTab = true;
+    }
   }
 };
 </script>
