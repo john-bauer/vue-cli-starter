@@ -20,15 +20,16 @@ export default {
             ],
             data: [2478, 5267, 734, 784, 433]
           }
-        ],
-        options: {
-          title: {
-            display: true,
-            text: 'Predicted world population (millions) in 2050'
-          }
-        }
+        ]
       },
-      { responsive: true, maintainAspectRatio: false }
+      {
+        responsive: true,
+        maintainAspectRatio: false,
+        title: {
+          display: true,
+          text: 'Predicted world population (in millions) in 2050'
+        }
+      }
     );
   }
 };

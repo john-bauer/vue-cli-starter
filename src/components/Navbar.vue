@@ -74,9 +74,6 @@ export default {
   methods: {
     toggleMenu() {
       this.isActive = !this.isActive;
-      if (this.isActive) {
-        console.log('show the menu');
-      }
     }
   }
 };

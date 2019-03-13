@@ -17,7 +17,8 @@
         </li>
       </ul>
     </div>
-    <div class="section">
+    <div class="container">
+      <!-- TODO: Fix, this is beyond lazy -->
       <LineChart v-if="tabs[0].activeTab"/>
       <BarChart v-if="tabs[1].activeTab"/>
       <PieChart v-if="tabs[2].activeTab"/>
@@ -61,7 +62,6 @@ export default {
   methods: {
     toggleTabs(tab) {
       for (let i = 0; i < this.tabs.length; i++) {
-        console.log(this.tabs[i].activeTab);
         this.tabs[i].activeTab = false;
       }
       tab.activeTab = true;

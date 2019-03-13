@@ -2,8 +2,7 @@
   <div class="c-firebase-demo">
     <section class="section">
       <div class="container">
-        <h1>{{ title }}</h1>
-        <button v-on:click="sayHello">Click me</button>
+        <h1>FIREBASE DEMO</h1>
       </div>
     </section>
   </div>
