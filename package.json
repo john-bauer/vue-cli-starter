@@ -12,6 +12,7 @@
     "chart.js": "^2.7.3",
     "chartjs": "^0.3.24",
     "firebase": "^5.8.6",
+    "gsap": "^2.1.2",
     "vue": "^2.6.6",
     "vue-chartjs": "^3.4.0",
     "vue-router": "^3.0.1",
