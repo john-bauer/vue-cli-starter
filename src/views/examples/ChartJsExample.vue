@@ -22,6 +22,10 @@
       <LineChart v-if="tabs[0].activeTab" />
       <BarChart v-if="tabs[1].activeTab" />
       <PieChart v-if="tabs[2].activeTab" />
+      <BubbleChart v-if="tabs[3].activeTab" />
+      <RadarChart v-if="tabs[4].activeTab" />
+      <DoughnutChart v-if="tabs[5].activeTab" />
+      <PolarAreaChart v-if="tabs[6].activeTab" />
     </div>
   </div>
 </template>
@@ -31,6 +35,10 @@ import Hero from '@/components/Hero.vue';
 import LineChart from '@/components/charts/LineChart.vue';
 import BarChart from '@/components/charts/BarChart.vue';
 import PieChart from '@/components/charts/PieChart.vue';
+import BubbleChart from '@/components/charts/BubbleChart.vue';
+import RadarChart from '@/components/charts/RadarChart.vue';
+import DoughnutChart from '@/components/charts/DoughnutChart.vue';
+import PolarAreaChart from '@/components/charts/PolarAreaChart.vue';
 
 export default {
   name: 'about',
@@ -38,7 +46,11 @@ export default {
     Hero,
     LineChart,
     BarChart,
-    PieChart
+    PieChart,
+    BubbleChart,
+    RadarChart,
+    DoughnutChart,
+    PolarAreaChart
   },
   data() {
     return {
@@ -54,6 +66,22 @@ export default {
         },
         {
           name: 'Pie',
+          activeTab: false
+        },
+        {
+          name: 'Bubble',
+          activeTab: false
+        },
+        {
+          name: 'Radar',
+          activeTab: false
+        },
+        {
+          name: 'Doughnut',
+          activeTab: false
+        },
+        {
+          name: 'PolarArea',
           activeTab: false
         }
       ]

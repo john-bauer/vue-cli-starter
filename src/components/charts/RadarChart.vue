@@ -3,37 +3,45 @@ import { Radar } from 'vue-chartjs';
 
 export default {
   extends: Radar,
-  props: ['chartdata', 'options'],
   mounted() {
-    this.renderChart({
-      labels: ['Africa', 'Asia', 'Europe', 'Latin America', 'North America'],
-      datasets: [
-        {
-          label: '1950',
-          fill: true,
-          backgroundColor: 'rgba(179,181,198,0.2)',
-          borderColor: 'rgba(179,181,198,1)',
-          pointBorderColor: '#fff',
-          pointBackgroundColor: 'rgba(179,181,198,1)',
-          data: [8.77, 55.61, 21.69, 6.62, 6.82]
-        },
-        {
-          label: '2050',
-          fill: true,
-          backgroundColor: 'rgba(255,99,132,0.2)',
-          borderColor: 'rgba(255,99,132,1)',
-          pointBorderColor: '#fff',
-          pointBackgroundColor: 'rgba(255,99,132,1)',
-          data: [25.48, 54.16, 7.61, 8.06, 4.45]
-        }
-      ],
-      options: {
-        title: {
-          display: true,
-          text: 'Distribution in % of world population'
-        }
-      }
-    });
+    this.renderChart(
+      {
+        labels: [
+          'Eating',
+          'Drinking',
+          'Sleeping',
+          'Designing',
+          'Coding',
+          'Cycling',
+          'Running'
+        ],
+        datasets: [
+          {
+            label: 'My First dataset',
+            backgroundColor: 'rgba(0, 216, 255, .3)',
+            borderColor: 'rgba(0, 216, 255, .8)',
+            borderWidth: 1,
+            pointBackgroundColor: '#fff',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(179,181,198,1)',
+            data: [65, 59, 90, 81, 56, 55, 40]
+          },
+          {
+            label: 'My Second dataset',
+            backgroundColor: 'rgba(228, 102, 81, .3)',
+            borderColor: 'rgba(255,99,132,1)',
+            pointBackgroundColor: 'rgba(255,99,132,1)',
+            borderWidth: 1,
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(255,99,132,1)',
+            data: [28, 48, 40, 19, 96, 27, 100]
+          }
+        ]
+      },
+      { responsive: true, maintainAspectRatio: false }
+    );
   }
 };
 </script>

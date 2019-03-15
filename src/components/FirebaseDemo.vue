@@ -11,6 +11,33 @@
           ⚠️ Your app is not connected to firebase. In order to set up your
           project, follow the steps below.
         </div>
+        <div class="container">
+          <div class="section">
+            <ol>
+              <li>
+                Create a
+                <code>.env</code> file in your root directory. Be sure to read
+                <a href="https://cli.vuejs.org/guide/mode-and-env.html"
+                  >Vue's guide</a
+                >
+                on environment variables if you aren't familiar with the concept
+              </li>
+              <li>
+                Add the following variables to your
+                <code>.env</code> file
+                <br />
+                <code
+                  >NODE_ENV=[YOUR ENVIRONMENT] <br />VUE_APP_APIKEY=[YOUR API
+                  KEY] <br />VUE_APP_AUTHDOMAIN=[YOUR AUTH DOMAIN]
+                  <br />VUE_APP_DATABASEURL=[YOUR DATABASE URL]
+                  <br />VUE_APP_PROJECTID=[YOUR PROJECT ID]
+                  <br />VUE_APP_STORAGEBUCKET=[YOUR STORAGE BUCKET]
+                  <br />VUE_APP_MESSAGINGSENDERID=[YOUR MESSAGING SENDER ID]
+                </code>
+              </li>
+            </ol>
+          </div>
+        </div>
       </div>
     </section>
   </div>
