@@ -6,7 +6,10 @@
           <!-- levels are being v weird here, fix later -->
           <p class="panel-heading">
             <span>Notes</span>
-            <a class="button is-outlined is-pulled-right" v-on:click="deleteNote">
+            <a
+              class="button is-outlined is-pulled-right"
+              v-on:click="deleteNote"
+            >
               <span class="icon is-small">
                 <i class="fas fa-trash is-centered"></i>
               </span>

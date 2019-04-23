@@ -5,7 +5,9 @@
         <i class="app-warning-icon fas fa-exclamation-triangle"></i>
       </span>
       <h3 class="is-size-4">Page Not Found</h3>
-      <p class="is-size-6">You may have typed the wrong address or the page has been removed</p>
+      <p class="is-size-6">
+        You may have typed the wrong address or the page has been removed
+      </p>
     </section>
   </div>
 </template>
@@ -26,5 +28,4 @@ export default {
   height: 128px;
   width: 128px;
 }
-
 </style>
