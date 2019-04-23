@@ -3,8 +3,8 @@
     <div id="nav">
       <Navbar />
     </div>
-    <router-view />
-    <Footer />
+    <router-view class="site"/>
+    <Footer class="site-footer" />
   </div>
 </template>
 

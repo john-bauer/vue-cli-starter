@@ -40,8 +40,8 @@
               <router-link class="navbar-item" to="/examples/chartjs"
                 >📈 Chart.js</router-link
               >
-              <router-link class="navbar-item" to="/examples/todo"
-                >✅ Todo</router-link
+              <router-link class="navbar-item" to="/examples/notes"
+                >📝 Notes</router-link
               >
             </div>
           </div>

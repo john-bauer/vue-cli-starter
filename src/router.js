@@ -4,6 +4,8 @@ import Home from './views/Home.vue';
 
 Vue.use(Router);
 
+// TODO: investigate scroll position resetting when going to new route
+
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -34,9 +36,13 @@ export default new Router({
       component: () => import('./views/examples/FirebaseExample.vue')
     },
     {
-      path: '/examples/todo',
-      name: 'todo',
-      component: () => import('./views/examples/TodoExample.vue')
+      path: '/examples/notes',
+      name: 'notes',
+      component: () => import('./views/examples/NotesExample.vue')
+    },
+    {
+      path: '*',
+      component: () => import('./views/PageNotFound.vue')
     }
   ]
 });
