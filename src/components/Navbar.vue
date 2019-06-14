@@ -30,7 +30,7 @@
 
       <!-- LARGER VIEWPORTS NAVBAR -->
       <div class="navbar-menu" v-bind:class="{ 'is-active': isActive }">
-        <div class="navbar-end" v-on:click="toggleMenu">
+        <div class="navbar-start" v-on:click="toggleMenu">
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Examples</a>
             <div class="navbar-dropdown">
@@ -40,13 +40,35 @@
               <router-link class="navbar-item" to="/examples/chartjs"
                 >📈 Chart.js</router-link
               >
+              <router-link class="navbar-item" to="/examples/gsap"
+                >🧦 GSAP</router-link
+              >
               <router-link class="navbar-item" to="/examples/notes"
                 >📝 Notes</router-link
+              >
+              <router-link class="navbar-item" to="/examples/contact"
+                >✉️ Contact</router-link
               >
             </div>
           </div>
           <router-link to="/about" class="navbar-item">About</router-link>
           <router-link class="navbar-item" to="/sandbox">Sandbox</router-link>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <router-link
+                to="/create-account"
+                tag="a"
+                class="button is-primary"
+                >Create Account</router-link
+              >
+              <router-link to="/sign-in" tag="a" class="button is-dark"
+                >Sign In</router-link
+              >
+            </div>
+          </div>
+          <div class="navbar-item"></div>
         </div>
       </div>
     </nav>

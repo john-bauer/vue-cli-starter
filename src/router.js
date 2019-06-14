@@ -21,6 +21,16 @@ export default new Router({
       component: () => import('./views/About.vue')
     },
     {
+      path: '/sign-in',
+      name: 'sign in',
+      component: () => import('./views/SignIn.vue')
+    },
+    {
+      path: '/create-account',
+      name: 'create account',
+      component: () => import('./views/CreateAccount.vue')
+    },
+    {
       path: '/sandbox',
       name: 'sandbox',
       component: () => import('./views/Sandbox.vue')
@@ -36,9 +46,19 @@ export default new Router({
       component: () => import('./views/examples/FirebaseExample.vue')
     },
     {
+      path: '/examples/gsap',
+      name: 'gsap',
+      component: () => import('./views/examples/GsapExample.vue')
+    },
+    {
       path: '/examples/notes',
       name: 'notes',
       component: () => import('./views/examples/NotesExample.vue')
+    },
+    {
+      path: '/examples/contact',
+      name: 'contact',
+      component: () => import('./views/examples/ContactExample.vue')
     },
     {
       path: '*',

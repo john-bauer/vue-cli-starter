@@ -3,12 +3,13 @@
     <Hero
       title="Sandbox"
       subtitle="a place to mess around with the app adsfasdf"
-      backgroundClass="is-dark"
+      backgroundClass="is-success"
     />
     <PlaceholderCopy />
     <section class="section">
       <div class="container">
         <button class="button" ref="appButton">This is some button</button>
+        <h1>test</h1>
       </div>
     </section>
   </div>
