@@ -10,7 +10,7 @@
   "dependencies": {
     "buefy": "^0.7.3",
     "bulma-helpers": "^0.3.8",
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "chartjs": "^0.3.24",
     "firebase": "^5.8.6",
     "gsap": "^2.1.2",
